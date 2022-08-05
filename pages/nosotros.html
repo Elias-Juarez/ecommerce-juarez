@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Css -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Unytecno</title>
 </head>
@@ -14,34 +18,110 @@
     <!----- header ------->
 
     <header>
-        <div>
-            <a href="../index.html"><img src="../img/computadora.png" alt="logo"></a>
-            <p>Unytecno</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./novedades.html">Novedades</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <div>
+                    <img src="../img/computadora.png" alt="logo">
+                    <a class="navbar-brand" href="#">Unytecno</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!------ main ------->
 
-    <main>
+    <main class="menu-nosotros">
         <section>
-            <!-- imagen de fondo -->
-            <h1>Lorem ipsum dolor sit.</h1>
-            <p></p>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/intel-carrusel.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/amd-carrusel.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/nvidia-carrusel.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
-        <section>
-            <div>
-                <img src="../img/imagen-tienda-2.jpg" alt="imagen-de-productos">
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam libero sequi ad, explicabo consectetur eos.</p>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <img src="../img/imagen-tienda.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Quienes somos?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, excepturi? Adipisci
+                                    quis ducimus optio obcaecati, veniam, nobis, nisi voluptatem rem quibusdam eligendi
+                                    dignissimos soluta labore reprehenderit fugiat sequi in nihil?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Nuestra historia
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas voluptatum
+                                    nostrum vero! Quas rerum, laborum saepe dolor, nobis consequuntur unde cum inventore
+                                    voluptatibus exercitationem corrupti eius minima quidem ad molestias?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
             </div>
         </section>
     </main>
@@ -55,11 +135,16 @@
         </div>
         <div class="div-redes">
             <h3>Seguinos en</h3>
-            <a href=""><img src="../img/facebook.png" alt="facebook" target="_blank"></a>
-            <a href=""><img src="../img/gorjeo.png" alt="twitter" target="_blank"></a>
-            <a href=""><img src="../img/instagram.png" alt="instagram" target="_blank"></a>
+            <a href="https://es-la.facebook.com
+            " target="_blank"><img src="../img/facebook.png" alt="facebook" target="_blank" id="facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="../img/gorjeo.png" alt="twitter"></a>
+            <a href="https://www.instagram.com
+            " target="_blank"><img src="../img/instagram.png" alt="instagram"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
