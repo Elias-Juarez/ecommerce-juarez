@@ -1,0 +1,22 @@
+/*-----pagina productos-----*/
+header {
+    nav {
+        background-color: black;
+        .container-fluid {
+            div {
+                img {
+                    width: 80px;
+                    height: 80px;
+                    margin-right: 10px;
+                }
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.nav-link{
+    margin-left: 50px;
+    font-size: 18px;
+}
