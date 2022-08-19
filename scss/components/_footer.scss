@@ -1,10 +1,10 @@
+@import "../base/mixins";
+
 /*------pagina productos-----*/
 footer {
     background-color: black;
     color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex (flex, space-around, center);
     height: 130px;
     .div-footer{
         p{
@@ -17,6 +17,10 @@ footer {
             background-color: #01AC7E;
             padding: 5px;
             border-radius: 5px;
+            transition: 1s;
+            &:hover{
+                background-color: nth($colores , 6 );
+            }
         }
     }
     .div-redes{

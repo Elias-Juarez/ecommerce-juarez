@@ -1,8 +1,13 @@
+@import "../base/variables";
+@import "../base/maps";
+@import "../base/extends";
+
 /*----pagina productos----*/
+
 .seccion-productos{
     h1{
         font-weight: 300;
-        color: #01AC7E;
+        color: nth($colores , 4);
         text-align: center;
         margin: 70px;
         letter-spacing: 5px;
@@ -18,12 +23,12 @@
         justify-items: center;
         div{
             width: 400px;
-            height: 450px;
+            height: 490px;
             border: 1px solid;
             margin-bottom: 80px;
             text-align: center;
             border-radius: 15px;
-            background-color: rgb(245, 245, 245);
+            background-color: nth($colores , 5);
             display: inline-block;
             transition: 1s;
             &:hover{
@@ -45,8 +50,8 @@
             }
             a{
                 text-decoration: none;
-                color: white;
-                background-color: #01AC7E;
+                color: map-get($boton , color-texto );
+                background-color: map-get($boton , bg-boton );
                 padding: 5px;
                 border-radius: 5px;
                 margin-bottom: 10px;
@@ -55,7 +60,85 @@
                 -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.27);
                 transition: 1s;
                 &:hover{
-                    background-color: royalblue;
+                    background-color: nth($colores , 6);
+                }
+            }
+        }
+    }
+}
+
+/* ---------MEDIA QUERIES PRODUCTOS-------- */
+
+@media screen and (max-width:835px) {
+    .seccion-productos{
+        .seccion-productos .contenedor-card-productos{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+    }
+}
+
+@media screen and (max-width:460px) {
+    .contenedor-card-productos div{
+        width: 300px;
+        height: 350px;
+        img{
+            height: 230px;
+        }
+        h2{
+            font-size: 15px;
+        }
+        a{
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width:340px){
+    .contenedor-card-productos div{
+        width: 250px;
+        height: 300px;
+        img{
+            height: 180px;
+        }
+        h2{
+            font-size: 14px;
+        }
+    }
+}
+
+
+/* PAGINA NOVEDADES */
+
+
+.seccion-novedades-1{
+    h1{
+        color: #01AC7E;
+        text-align: center;
+        padding: 20px;
+        margin: 30px;
+        letter-spacing: 5px;
+        border-bottom: 2px black solid;
+    }
+    .contenedor-pagina-novedades{
+        @extend %flex;
+        div{
+            margin: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img{
+                width: 798px;
+                height: 600px;
+            }
+            div{
+                h2{
+                    padding: 20px;
+                    color: black;
+                }
+                p{
+                    color: black;
+                    text-align: center;
                 }
             }
         }

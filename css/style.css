@@ -21,6 +21,11 @@ header nav {
   margin-left: 50px;
   font-size: 18px; }
 
+.seccion-novedades-1 .contenedor-pagina-novedades {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 /*----pagina productos----*/
 .seccion-productos h1 {
   font-weight: 300;
@@ -40,7 +45,7 @@ header nav {
   justify-items: center; }
   .seccion-productos .contenedor-card-productos div {
     width: 400px;
-    height: 450px;
+    height: 490px;
     border: 1px solid;
     margin-bottom: 80px;
     text-align: center;
@@ -74,7 +79,33 @@ header nav {
       -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.27);
       transition: 1s; }
       .seccion-productos .contenedor-card-productos div a:hover {
-        background-color: royalblue; }
+        background-color: #0606ac; }
+
+/* ---------MEDIA QUERIES PRODUCTOS-------- */
+@media screen and (max-width: 835px) {
+  .seccion-productos .seccion-productos .contenedor-card-productos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; } }
+
+@media screen and (max-width: 460px) {
+  .contenedor-card-productos div {
+    width: 300px;
+    height: 350px; }
+    .contenedor-card-productos div img {
+      height: 230px; }
+    .contenedor-card-productos div h2 {
+      font-size: 15px; }
+    .contenedor-card-productos div a {
+      font-size: 12px; } }
+
+@media screen and (max-width: 340px) {
+  .contenedor-card-productos div {
+    width: 250px;
+    height: 300px; }
+    .contenedor-card-productos div img {
+      height: 180px; }
+    .contenedor-card-productos div h2 {
+      font-size: 14px; } }
 
 /*------pagina productos-----*/
 footer {
@@ -92,7 +123,10 @@ footer {
     color: white;
     background-color: #01AC7E;
     padding: 5px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    transition: 1s; }
+    footer .div-footer a:hover {
+      background-color: #0606ac; }
   footer .div-redes h3 {
     text-align: center;
     font-weight: 100;
@@ -105,3 +139,28 @@ footer {
 #facebook {
   width: 55px;
   height: 55px; }
+
+
+  /* PAGINA NOVEDADES */
+.seccion-novedades-1 h1 {
+  color: #01AC7E;
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+  letter-spacing: 5px;
+  border-bottom: 2px black solid; }
+
+.seccion-novedades-1 .contenedor-pagina-novedades div {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .seccion-novedades-1 .contenedor-pagina-novedades div img {
+    width: 798px;
+    height: 600px; }
+  .seccion-novedades-1 .contenedor-pagina-novedades div div h2 {
+    padding: 20px;
+    color: black; }
+  .seccion-novedades-1 .contenedor-pagina-novedades div div p {
+    color: black;
+    text-align: center; }

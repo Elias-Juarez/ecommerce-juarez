@@ -1,0 +1,11 @@
+en las paginas del sitio aplique seo con las siguientes características:
+
+PUSE UN FAVICON
+
+DESCRIPCIÓN: mediante la etiqueta meta name description agregue el siguiente parrafo: " pagina de venta de productos tecnológicos, placas de video, procesadores y pc-gamer "
+
+PALABRAS CLAVE: mediante la etiqueta meta name keywords agregue las palabras clave en todas las paginas del sitio: "tecnológia, computadoras, placas de video, procesadores, tienda de tecnológia, computación, pc gamer, productos gamer"
+
+PROTOCOLO OPEN GRAPH: en el meta OG:TYPE "Ecommerce" , en el meta OG:TITLE " Unytecno | venta de productos tecnológicos " , el meta OG:URL , el meta OG:IMAGE , y en el meta OG:DESCRIPTION " pagina de venta de productos tecnológicos, placas de video, procesadores y pc-gamer "
+
+ENCABEZADO: para el encabezado del h1 del index utilize el texto "¡Los mejores productos de tecnológia y computación!"
