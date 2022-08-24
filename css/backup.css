@@ -82,7 +82,7 @@ main{
 .contenedor-card{
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .ofertas h2{
@@ -246,9 +246,9 @@ footer {
     .hero div p{
         font-size: 15px;
     }
-    .hero div a{
+    /* .hero div a{
         font-size: 13px;
-    }
+    } */
     .contenedor-novedades div p{
         font-size: 15px;
     }
@@ -326,9 +326,9 @@ footer {
     .hero div p{
         font-size: 13px;
     }
-    .hero div a{
+    /* .hero div a{
         font-size: 11px;
-    }
+    } */
     .ofertas h2{
         font-size: 18px;
     }
@@ -518,11 +518,6 @@ footer {
 /* -----------PAGINA NOVEDADES------------ */
 
 
-.contenedor-pagina-novedades{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .seccion-novedades-1 h1{
     color: #01AC7E;
@@ -533,30 +528,35 @@ footer {
     border-bottom: 2px black solid;
 }
 
-.seccion-novedades-1 div {
-    margin: 40px;
+.seccion-novedades-2 {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.seccion-novedades-1 div img{
-    width: 798px;
-    height: 600px;
+
+.contenedor-pagina-novedades-2 div {
+    background-color: white;
+    height: 760px;
+    width: 800px;
+    margin: 60px;
+    border-radius: 5px;
 }
 
-.seccion-novedades-1 div h2{
-    padding: 20px;
-    color: black;
+.contenedor-pagina-novedades-2 div img{
+    height: 450px;
+    width: 100%;
+    border-radius: 5px;
 }
 
-.seccion-novedades-1 div p{
-    color: black;
+.contenedor-pagina-novedades-2 div h2{
+    padding: 10px;
     text-align: center;
 }
 
-
-
+.contenedor-pagina-novedades-2 div p{
+    padding: 20px;
+}
 
 
 /* -------------PAGINA-NOSOTROS--------------- */
