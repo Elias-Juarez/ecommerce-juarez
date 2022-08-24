@@ -1,7 +1,7 @@
 {
   "name": "ecommerce-juarez",
   "version": "1.0.0",
-  "description": "",
+  "description": "proyecto del curso de Desarrollo Web de CoderHouse, un sitio web (ecommerce) aplicando html,css,bootstrap,sass,git,nodejs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
