@@ -8,9 +8,14 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 /*-----PAGINA INDEX--------*/
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 910px) {
+  main .novedades .contenedor-novedades div {
+    margin: 30px; } }
+
+@media screen and (max-width: 880px) {
   .novedades .contenedor-novedades {
-    flex-direction: column; } }
+    flex-direction: column;
+    align-items: center; } }
 
 @media screen and (max-width: 760px) {
   main .hero {
@@ -22,6 +27,8 @@ body {
   main .novedades .contenedor-novedades div img {
     height: 50%;
     width: 50%; }
+  main .novedades .contenedor-novedades div h3 {
+    font-size: 18px; }
   main .novedades .contenedor-novedades div p {
     font-size: 15px; }
   footer .div-footer .p-footer {
@@ -45,11 +52,13 @@ body {
 @media screen and (max-width: 500px) {
   main .hero {
     background-size: cover; }
+  main .hero div a {
+    font-size: 13px; }
   main .ofertas h2 {
     font-size: 20px; }
   main .ofertas .contenedor-card .contenedor-card-elementos {
     width: 280px;
-    height: 330px; }
+    height: 370px; }
   main .ofertas .contenedor-card .contenedor-card-elementos img {
     width: 100%;
     height: 230px; }
@@ -70,7 +79,7 @@ body {
   footer .div-footer .p-footer {
     font-size: 13px; }
   footer .div-footer a {
-    font-size: 10px; }
+    font-size: 12px; }
   footer .div-redes .h3-footer {
     font-size: 13px; }
   footer .div-redes a .twitter {
@@ -92,7 +101,7 @@ body {
     font-size: 18px; }
   main .ofertas .contenedor-card .contenedor-card-elementos {
     width: 250px;
-    height: 300px; }
+    height: 340px; }
   main .ofertas .contenedor-card .contenedor-card-elementos img {
     width: 100%;
     height: 200px; }
@@ -130,11 +139,13 @@ body {
 @media screen and (max-width: 460px) {
   main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos {
     width: 300px;
-    height: 380px; }
+    height: 400px; }
   main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos img {
     height: 230px; }
   main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos h2 {
     font-size: 15px; }
+  main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos p {
+    margin-bottom: 5px; }
   main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos a {
     font-size: 12px; } }
 
@@ -200,10 +211,18 @@ body {
     margin: 10px;
     margin-bottom: 20px; } }
 
+@media screen and (max-width: 350px) {
+  main .seccion-novedades-2 .contenedor-pagina-novedades-2 div {
+    width: 310px; } }
+
 /* ---------MEDIA QUERIES NOSOTROS-------- */
 @media screen and (max-width: 770px) {
   .menu-nosotros .seccion-nosotros div div img {
     margin-bottom: 30px; } }
+
+@media screen and (max-width: 500px) {
+  .menu-nosotros section .slide .carousel-inner .carousel-item img {
+    height: 40vh; } }
 
 @media screen and (max-width: 450px) {
   .menu-nosotros .seccion-nosotros div div img {
@@ -218,15 +237,26 @@ header nav {
     margin-right: 10px; }
   header nav .container-fluid div a {
     color: white; }
+  header nav .container-fluid div .enlaces-nav {
+    color: white;
+    transition: 1s; }
+    header nav .container-fluid div .enlaces-nav:hover {
+      background-color: #01AC7E;
+      border-radius: 5px; }
 
 .nav-link {
   margin-left: 50px;
   font-size: 18px; }
 
 /*-----PAGINA INDEX--------*/
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 910px) {
+  main .novedades .contenedor-novedades div {
+    margin: 30px; } }
+
+@media screen and (max-width: 880px) {
   .novedades .contenedor-novedades {
-    flex-direction: column; } }
+    flex-direction: column;
+    align-items: center; } }
 
 @media screen and (max-width: 760px) {
   main .hero {
@@ -238,6 +268,8 @@ header nav {
   main .novedades .contenedor-novedades div img {
     height: 50%;
     width: 50%; }
+  main .novedades .contenedor-novedades div h3 {
+    font-size: 18px; }
   main .novedades .contenedor-novedades div p {
     font-size: 15px; }
   footer .div-footer .p-footer {
@@ -261,11 +293,13 @@ header nav {
 @media screen and (max-width: 500px) {
   main .hero {
     background-size: cover; }
+  main .hero div a {
+    font-size: 13px; }
   main .ofertas h2 {
     font-size: 20px; }
   main .ofertas .contenedor-card .contenedor-card-elementos {
     width: 280px;
-    height: 330px; }
+    height: 370px; }
   main .ofertas .contenedor-card .contenedor-card-elementos img {
     width: 100%;
     height: 230px; }
@@ -286,7 +320,7 @@ header nav {
   footer .div-footer .p-footer {
     font-size: 13px; }
   footer .div-footer a {
-    font-size: 10px; }
+    font-size: 12px; }
   footer .div-redes .h3-footer {
     font-size: 13px; }
   footer .div-redes a .twitter {
@@ -308,7 +342,7 @@ header nav {
     font-size: 18px; }
   main .ofertas .contenedor-card .contenedor-card-elementos {
     width: 250px;
-    height: 300px; }
+    height: 340px; }
   main .ofertas .contenedor-card .contenedor-card-elementos img {
     width: 100%;
     height: 200px; }
@@ -346,11 +380,13 @@ header nav {
 @media screen and (max-width: 460px) {
   main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos {
     width: 300px;
-    height: 380px; }
+    height: 400px; }
   main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos img {
     height: 230px; }
   main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos h2 {
     font-size: 15px; }
+  main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos p {
+    margin-bottom: 5px; }
   main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos a {
     font-size: 12px; } }
 
@@ -416,10 +452,18 @@ header nav {
     margin: 10px;
     margin-bottom: 20px; } }
 
+@media screen and (max-width: 350px) {
+  main .seccion-novedades-2 .contenedor-pagina-novedades-2 div {
+    width: 310px; } }
+
 /* ---------MEDIA QUERIES NOSOTROS-------- */
 @media screen and (max-width: 770px) {
   .menu-nosotros .seccion-nosotros div div img {
     margin-bottom: 30px; } }
+
+@media screen and (max-width: 500px) {
+  .menu-nosotros section .slide .carousel-inner .carousel-item img {
+    height: 40vh; } }
 
 @media screen and (max-width: 450px) {
   .menu-nosotros .seccion-nosotros div div img {
@@ -452,6 +496,16 @@ main {
         color: white;
         font-size: 20px;
         margin: 25px 0 30px 0; }
+      main .hero div a {
+        text-decoration: none;
+        color: white;
+        background-color: #01AC7E;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        transition: 1s; }
+        main .hero div a:hover {
+          background-color: #0606ac; }
   main .ofertas h2 {
     color: #01AC7E;
     font-weight: 300;
@@ -466,7 +520,7 @@ main {
     flex-wrap: wrap; }
     main .ofertas .contenedor-card div {
       width: 300px;
-      height: 360px;
+      height: 400px;
       border: 1px solid;
       margin-bottom: 40px;
       text-align: center;
@@ -486,6 +540,8 @@ main {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 200;
         font-size: 15px; }
+      main .ofertas .contenedor-card div p {
+        margin-bottom: 10px; }
       main .ofertas .contenedor-card div a {
         text-decoration: none;
         color: white;
@@ -512,19 +568,23 @@ main {
       color: white;
       display: flex; }
       main .novedades .contenedor-novedades div {
-        width: 100%;
-        margin: 10px 0 20px 0;
-        text-align: center; }
+        background-color: white;
+        width: 80%;
+        margin: 10px 30px 60px 30px;
+        text-align: center;
+        border-radius: 5px; }
         main .novedades .contenedor-novedades div img {
           width: 400px;
           height: 400px; }
         main .novedades .contenedor-novedades div h3 {
           margin-top: 10px;
-          font-size: 25px; }
+          font-size: 25px;
+          color: #0606ac; }
         main .novedades .contenedor-novedades div p {
           margin: 30px;
           font-size: 20px;
-          text-align: center; }
+          text-align: center;
+          color: black; }
 
 /*-------PAGINA PRODUCTOS-------*/
 .seccion-productos h1 {
@@ -621,7 +681,8 @@ main .seccion-novedades-2 {
   .menu-nosotros .container-fluid div div img {
     margin-left: 20px;
     height: 50vh;
-    width: 90%; }
+    width: 90%;
+    border-radius: 5px; }
 
 /*------PAGINA CONTACTO------*/
 .main-contacto {
@@ -630,9 +691,14 @@ main .seccion-novedades-2 {
     margin: 40px; }
 
 /*-----PAGINA INDEX--------*/
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 910px) {
+  main .novedades .contenedor-novedades div {
+    margin: 30px; } }
+
+@media screen and (max-width: 880px) {
   .novedades .contenedor-novedades {
-    flex-direction: column; } }
+    flex-direction: column;
+    align-items: center; } }
 
 @media screen and (max-width: 760px) {
   main .hero {
@@ -644,6 +710,8 @@ main .seccion-novedades-2 {
   main .novedades .contenedor-novedades div img {
     height: 50%;
     width: 50%; }
+  main .novedades .contenedor-novedades div h3 {
+    font-size: 18px; }
   main .novedades .contenedor-novedades div p {
     font-size: 15px; }
   footer .div-footer .p-footer {
@@ -667,11 +735,13 @@ main .seccion-novedades-2 {
 @media screen and (max-width: 500px) {
   main .hero {
     background-size: cover; }
+  main .hero div a {
+    font-size: 13px; }
   main .ofertas h2 {
     font-size: 20px; }
   main .ofertas .contenedor-card .contenedor-card-elementos {
     width: 280px;
-    height: 330px; }
+    height: 370px; }
   main .ofertas .contenedor-card .contenedor-card-elementos img {
     width: 100%;
     height: 230px; }
@@ -692,7 +762,7 @@ main .seccion-novedades-2 {
   footer .div-footer .p-footer {
     font-size: 13px; }
   footer .div-footer a {
-    font-size: 10px; }
+    font-size: 12px; }
   footer .div-redes .h3-footer {
     font-size: 13px; }
   footer .div-redes a .twitter {
@@ -714,7 +784,7 @@ main .seccion-novedades-2 {
     font-size: 18px; }
   main .ofertas .contenedor-card .contenedor-card-elementos {
     width: 250px;
-    height: 300px; }
+    height: 340px; }
   main .ofertas .contenedor-card .contenedor-card-elementos img {
     width: 100%;
     height: 200px; }
@@ -752,11 +822,13 @@ main .seccion-novedades-2 {
 @media screen and (max-width: 460px) {
   main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos {
     width: 300px;
-    height: 380px; }
+    height: 400px; }
   main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos img {
     height: 230px; }
   main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos h2 {
     font-size: 15px; }
+  main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos p {
+    margin-bottom: 5px; }
   main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos a {
     font-size: 12px; } }
 
@@ -822,10 +894,18 @@ main .seccion-novedades-2 {
     margin: 10px;
     margin-bottom: 20px; } }
 
+@media screen and (max-width: 350px) {
+  main .seccion-novedades-2 .contenedor-pagina-novedades-2 div {
+    width: 310px; } }
+
 /* ---------MEDIA QUERIES NOSOTROS-------- */
 @media screen and (max-width: 770px) {
   .menu-nosotros .seccion-nosotros div div img {
     margin-bottom: 30px; } }
+
+@media screen and (max-width: 500px) {
+  .menu-nosotros section .slide .carousel-inner .carousel-item img {
+    height: 40vh; } }
 
 @media screen and (max-width: 450px) {
   .menu-nosotros .seccion-nosotros div div img {

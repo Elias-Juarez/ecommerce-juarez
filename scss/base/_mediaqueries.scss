@@ -1,8 +1,15 @@
 /*-----PAGINA INDEX--------*/
 
-@media screen and (max-width:825px) {
+@media screen and (max-width:910px){
+    main .novedades .contenedor-novedades div{
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width:880px) {
     .novedades .contenedor-novedades {
         flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -22,6 +29,10 @@
     main .novedades .contenedor-novedades div img {
         height: 50%;
         width: 50%;
+    }
+
+    main .novedades .contenedor-novedades div h3{
+        font-size: 18px;
     }
 
     main .novedades .contenedor-novedades div p {
@@ -63,13 +74,17 @@
         background-size: cover;
     }
 
+    main .hero div a {
+        font-size: 13px;
+    }
+
     main .ofertas h2 {
         font-size: 20px;
     }
 
     main .ofertas .contenedor-card .contenedor-card-elementos {
         width: 280px;
-        height: 330px;
+        height: 370px;
     }
 
     main .ofertas .contenedor-card .contenedor-card-elementos img {
@@ -108,7 +123,7 @@
     }
 
     footer .div-footer a {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     footer .div-redes .h3-footer {
@@ -144,7 +159,7 @@
 
     main .ofertas .contenedor-card .contenedor-card-elementos {
         width: 250px;
-        height: 300px;
+        height: 340px;
     }
 
     main .ofertas .contenedor-card .contenedor-card-elementos img {
@@ -207,7 +222,7 @@
 @media screen and (max-width:460px) {
     main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos{
         width: 300px;
-        height: 380px;
+        height: 400px;
     } 
 
         main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos img {
@@ -216,6 +231,10 @@
 
         main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos h2 {
             font-size: 15px;
+        }
+
+        main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos p{
+            margin-bottom: 5px;
         }
 
         main .seccion-productos .contenedor-card-productos .contenedor-card-productos-elementos a {
@@ -312,6 +331,12 @@
     }
 }
 
+@media screen and (max-width:350px){
+    main .seccion-novedades-2 .contenedor-pagina-novedades-2 div{
+        width: 310px;
+    }
+}
+
 
 
 /* ---------MEDIA QUERIES NOSOTROS-------- */
@@ -320,6 +345,12 @@
 @media screen and (max-width:770px){
     .menu-nosotros .seccion-nosotros div div img{
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .menu-nosotros section .slide .carousel-inner .carousel-item img{
+        height: 40vh;
     }
 }
 

@@ -1,9 +1,10 @@
 @import "../base/mediaqueries";
+@import "../base/variables";
 
 /*-----HEADER DE TODAS LAS PAGINAS-----*/
 header {
     nav {
-        background-color: black;
+        background-color: nth($colores , 2 );
         .container-fluid {
             div {
                 img {
@@ -11,8 +12,16 @@ header {
                     height: 80px;
                     margin-right: 10px;
                 }
-                a {
-                    color: white;
+                a{
+                    color: nth($colores , 3 );
+                }
+                .enlaces-nav {
+                    color: nth($colores , 3 );
+                    transition: 1s;
+                    &:hover{
+                        background-color: nth($colores , 4 );
+                        border-radius: 5px;
+                    }
                 }
             }
         }
